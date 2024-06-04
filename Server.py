@@ -19,7 +19,6 @@ def hello():
 @app.route("/run", methods=['POST'])
 def run():
     try:
-        #you need to do exception handling
         data = request.get_json()
 
         print(data)
